@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/417fa88f94.js"></script>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Goldstein | Resume</title>
@@ -10,32 +13,40 @@
 
 <body>
     <!-- // Intro -->
-    <header>
+    <header id="about" role="banner">
+        <a role="button" href="Goldstein_Example_Resume.pdf" class="btn download" download>Download PDF</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#work">Work Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
         <div class="content-wrap">
             <img class="profile-picture col-narrow" src="_images/gabriel_goldstein.png" alt="Gabriel Goldstein">
             <div class="col-wide">
                 <h1>Gabriel Goldstein</h1>
                 <h2>Student at California Lutheran University</h2>
 
-                <p>Computer Science Student at California Lutheran University. Avid computer nerd with interests in Web Design, App Development, general System Design and Software Engineering. Member of the CLU Computer Science Club and the CLU ACM Competitive Programming Club. </p>
+                <p>Computer Science Student at California Lutheran University. Avid computer nerd with interests in Web Design, App Development, general System Design and Software Engineering. Member of the CLU Computer Science Club and the CLU ACM Competitive Programming Club. Note that the icons at the bottom don't link to my specific profiles or website as this is a project simply for learning Web Design, not designed for full functionality. </p>
             </div>
         </div>
+
     </header>
 
     <main role="main">
         <!-- // Work Experience -->
-        <section class="work">
+        <section class="work" id="work">
             <div class="content-wrap">
 
                 <h2>Work Experience</h2>
                 <div class="col-narrow">
                     <!-- Job Details: copy this whole block to add more jobs -->
                     <h3>Research Assistant</h3>
-                    <p>Target</p>
+                    <p class="uppercase">California Lutheran University</p>
                     <p>9/26/19 - Present</p>
 
                     <h3>Cashier</h3>
-                    <p>Target</p>
+                    <p class="uppercase">Target</p>
                     <p>10/6/16 - 10/6/17</p>
                 </div>
 
@@ -43,16 +54,19 @@
 
 
                 <!-- This list can be deleted if you don't want to use it. -->
-                <div class="col-wide">
+                <div class="col-wide job-description">
 
                     <ul>
-                        <br><br>
+
                         <li>Assisted staff with technical support duties.</li>
                         <li>Maintained records, Excel spreadsheets, and internal and external survey reporting.</li>
-                        <br><br>
-                        <li>Provided a swift and high quality customer experience by aiding customers in finding items, maintaining a positive and gregarious attitude. and rapidly operating the cash register and item scanner. </li>
-                        <li>Ensured front-end and work area was clean and tidy.</li>
                     </ul>
+                    <div class="col-wide job-description">
+                        <ul>
+                            <li>Provided a swift and high quality customer experience by aiding customers in finding items, maintaining a positive and gregarious attitude. and rapidly operating the cash register and item scanner. </li>
+                            <li>Ensured front-end and work area was clean and tidy.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- end of Job Details block. -->
@@ -60,7 +74,7 @@
 
 
         <!-- // Education -->
-        <section class="education">
+        <section class="education" id="education">
             <div class="content-wrap">
 
                 <h2>Education</h2>
@@ -83,17 +97,17 @@
     </main>
 
     <!-- // Footer & contact info -->
-    <footer role="contentinfo">
+    <footer role="contentinfo" id="contact">
         <div class="content-wrap">
             <h2>Let's Keep in Touch!</h2>
 
             <!-- Social media and contact links. Add or remove any networks. -->
             <div class="contact-info">
-                <a href="mailto:email@example.com">email@example.com</a>
-                <a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a>
-                <a href="#" target="_blank">Twitter</a>
-                <a href="#" target="_blank">LinkedIn</a>
-                <a href="#" target="_blank">Facebook</a>
+                <a href="mailto:email@example.com"><i class="far fa-envelope"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-sitemap"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
             </div>
 
             <p>Copyright 2019 by Gabriel Goldstein</p>
